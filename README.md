@@ -35,12 +35,3 @@ Performing multiple security scans manually can be time-consuming and inefficien
 - Kali Linux (Preferred, as most tools are pre-installed)  
 - Also tested on Parrot OS & Ubuntu  
 
-### **Installation** ###
-Alternatively, your can install the rapidscan python module with pip. This will create a link for rapidscan in your PATH.
-
-```
--git clone https://github.com/Digvijay8580/onixscan.git /opt/
-
--cd /opt/onixscan
-
--python3 -m pip install .```
