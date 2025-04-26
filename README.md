@@ -38,8 +38,9 @@ Performing multiple security scans manually can be time-consuming and inefficien
 ### **Installation** ###
 Alternatively, your can install the rapidscan python module with pip. This will create a link for rapidscan in your PATH.
 
-``-git clone https://github.com/Digvijay8580/onixscan.git /opt/
+```
+-git clone https://github.com/Digvijay8580/onixscan.git /opt/
 
 -cd /opt/onixscan
 
--python3 -m pip install .``
+-python3 -m pip install .```
