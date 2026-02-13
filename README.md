@@ -39,7 +39,16 @@ Performing multiple security scans manually can be time-consuming and inefficien
 
 Alternatively, your can install the rapidscan python module with pip. This will create a link for OnixScanner in your PATH.
 
-```
-git clone https://github.com/Digvijay8580/OnixD.git /opt/
-cd /opt/Onixscanner
-python3 -m pip install .```
+# 1. Install dependencies (Ubuntu/Kali Linux)
+sudo apt update
+sudo apt install nmap curl -y
+
+# 2. Make script executable
+chmod +x onixscanner.py
+
+# 3. Run the scanner
+python3 onixscanner.py example.com
+
+# OR install as package
+python3 -m pip install .
+onixscanner example.com
