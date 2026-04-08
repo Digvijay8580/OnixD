@@ -10,12 +10,12 @@ HERE = pathlib.Path(__file__).parent
 README = (HERE / "README.md").read_text()
 
 setup(
-    name                =   "Onixscanner",
+    name                =   "OnixD",
     description         =   "Web Vulnerability Scanner.",
     long_description    =   README,
     long_description_content_type = "text/markdown",
     url                 =   "https://github.com/Digvijay8580/OnixD",
-    py_modules          =   ['Onixscanner',],
+    py_modules          =   ['OnixD',],
     install_requires    =   [],
     python_requires=">=3.6",
 )
