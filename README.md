@@ -35,22 +35,47 @@ Performing multiple security scans manually can be time-consuming and inefficien
 - Kali Linux (Preferred, as most tools are pre-installed)  
 - Also tested on Parrot OS & Ubuntu  
 
-### **How to Run in a Live Environment**
-To execute the OnixD in your live environment, run the primary `te.py` script and pass your target URL:
+### **Install and Run from GitHub on Kali Linux**
+If the repo is on GitHub, use these commands in Kali Linux:
 
 ```bash
-# Basic scan against a live target
-python te.py http://example.com
+# Clone the repository from GitHub
+git clone https://github.com/Digvijay8580/OnixD.git
+cd OnixD
+
+# Install required Kali packages (if not already installed)
+sudo apt update
+sudo apt install python3 python3-venv python3-pip nmap curl dnsutils -y
+
+# Create and activate a Python virtual environment
+python3 -m venv venv
+source venv/bin/activate
+
+# Install the project package
+python3 -m pip install .
+```
+
+### **How to Run the Scanner**
+
+```bash
+# Run a scan against a target
+python3 onixscanner.py http://example.com
 
 # Update the scanner to the latest version
-python te.py -u
+python3 onixscanner.py -u
 
 # Skip specific sub-tools (e.g. skip wapiti)
-python te.py -s wapiti http://example.com
+python3 onixscanner.py -s wapiti http://example.com
 
 # Disable the idle loader/spinner
-python te.py -n http://example.com
+python3 onixscanner.py -n http://example.com
 
 # Show the help menu
-python te.py -h
+python3 onixscanner.py -h
+```
+
+If the package install succeeded, you can also run:
+
+```bash
+onixscanner http://example.com
 ```
